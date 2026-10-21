@@ -1,0 +1,484 @@
+@import 'bootstrap/dist/css/bootstrap.rtl.min.css';
+
+:root {
+    --vira-warm-white: #F7F6F2;
+    --vira-navy: #172B46;
+    --vira-gold: #C69B51;
+    --vira-card: #FFFFFF;
+    --vira-text: #263548;
+    --vira-muted: #5A6B7D;
+    --vira-line: rgba(23, 43, 70, 0.08);
+    --vira-font: 'Vazirmatn', Tahoma, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--vira-font);
+    color: var(--vira-text);
+    background: var(--vira-warm-white);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.vira-home-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 3rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.35rem;
+    border: 1px solid transparent;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.vira-home-btn-gold {
+    background: var(--vira-gold);
+    color: #fff;
+}
+
+.vira-home-btn-gold:hover,
+.vira-home-btn-gold:focus {
+    background: #b58945;
+    color: #fff;
+}
+
+.vira-home-btn-outline {
+    background: transparent;
+    color: var(--vira-navy);
+    border-color: var(--vira-navy);
+}
+
+.vira-home-btn-outline:hover,
+.vira-home-btn-outline:focus {
+    background: var(--vira-navy);
+    color: #fff;
+}
+
+.vira-home-btn-light {
+    background: #fff;
+    color: var(--vira-navy);
+}
+
+.vira-home-btn-light:hover,
+.vira-home-btn-light:focus {
+    background: var(--vira-warm-white);
+    color: var(--vira-navy);
+}
+
+.vira-home-header {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    background: rgba(247, 246, 242, 0.96);
+    border-bottom: 1px solid var(--vira-line);
+    backdrop-filter: blur(8px);
+}
+
+.vira-home-brand {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--vira-navy);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+.vira-home-brand span {
+    color: var(--vira-gold);
+    font-weight: 500;
+    margin-inline-start: 0.35rem;
+}
+
+.vira-home-nav .nav-link {
+    color: var(--vira-text);
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+}
+
+.vira-home-nav .nav-link:hover,
+.vira-home-nav .nav-link:focus {
+    color: var(--vira-gold);
+}
+
+.vira-home-navbar-toggler {
+    border: 1px solid var(--vira-line);
+    padding: 0.4rem 0.6rem;
+}
+
+.vira-home-hero {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    overflow: hidden;
+}
+
+.vira-home-hero-media {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.vira-home-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(23, 43, 70, 0.35) 0%, rgba(23, 43, 70, 0.72) 100%);
+}
+
+.vira-home-hero-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 5rem 0 4.5rem;
+}
+
+.vira-home-hero-title {
+    font-size: clamp(1.9rem, 4.5vw, 3.25rem);
+    font-weight: 700;
+    line-height: 1.25;
+    max-width: 16ch;
+    margin-bottom: 1rem;
+}
+
+.vira-home-hero-text {
+    max-width: 36rem;
+    margin-bottom: 1.75rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.05rem;
+}
+
+.vira-home-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.vira-home-section {
+    padding: 5rem 0;
+}
+
+.vira-home-section-title {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 700;
+    color: var(--vira-navy);
+    margin-bottom: 0.75rem;
+}
+
+.vira-home-section-lead {
+    color: var(--vira-muted);
+    max-width: 40rem;
+    margin-bottom: 0;
+}
+
+.vira-home-section-head {
+    margin-bottom: 2.5rem;
+}
+
+.vira-home-benefits {
+    background: #fff;
+}
+
+.vira-home-benefit {
+    height: 100%;
+    padding: 1.5rem 0;
+    border-top: 2px solid var(--vira-gold);
+}
+
+.vira-home-benefit h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--vira-navy);
+    margin-bottom: 0.6rem;
+}
+
+.vira-home-benefit p {
+    margin: 0;
+    color: var(--vira-muted);
+}
+
+.vira-home-about {
+    background: var(--vira-warm-white);
+}
+
+.vira-home-stat {
+    background: var(--vira-card);
+    border: 1px solid var(--vira-line);
+    padding: 1.5rem 1.25rem;
+    height: 100%;
+    text-align: center;
+}
+
+.vira-home-stat-value {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--vira-navy);
+    margin-bottom: 0.35rem;
+}
+
+.vira-home-stat-label {
+    color: var(--vira-muted);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.vira-home-services {
+    background: #fff;
+}
+
+.vira-home-service {
+    height: 100%;
+    padding: 1.75rem 1.5rem;
+    background: var(--vira-warm-white);
+    border-inline-start: 3px solid var(--vira-gold);
+}
+
+.vira-home-service h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--vira-navy);
+    margin-bottom: 0.65rem;
+}
+
+.vira-home-service p {
+    margin: 0;
+    color: var(--vira-muted);
+}
+
+.vira-home-coverage {
+    background: var(--vira-warm-white);
+}
+
+.vira-home-map {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    border: 1px solid var(--vira-line);
+    background:
+        radial-gradient(circle at 30% 40%, rgba(198, 155, 81, 0.12), transparent 35%),
+        radial-gradient(circle at 70% 55%, rgba(23, 43, 70, 0.08), transparent 40%),
+        linear-gradient(145deg, #eef1f5 0%, #f7f6f2 55%, #e8edf3 100%);
+    overflow: hidden;
+}
+
+.vira-home-map-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(23, 43, 70, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23, 43, 70, 0.05) 1px, transparent 1px);
+    background-size: 48px 48px;
+}
+
+.vira-home-map-route {
+    position: absolute;
+    border: 0;
+    height: 2px;
+    background: rgba(198, 155, 81, 0.55);
+    transform-origin: right center;
+}
+
+.vira-home-map-route-1 {
+    top: 38%;
+    right: 22%;
+    width: 28%;
+    transform: rotate(-18deg);
+}
+
+.vira-home-map-route-2 {
+    top: 58%;
+    right: 35%;
+    width: 34%;
+    transform: rotate(12deg);
+}
+
+.vira-home-map-pin {
+    position: absolute;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background: var(--vira-gold);
+    box-shadow: 0 0 0 6px rgba(198, 155, 81, 0.18);
+}
+
+.vira-home-map-pin-1 { top: 32%; right: 28%; }
+.vira-home-map-pin-2 { top: 48%; right: 52%; }
+.vira-home-map-pin-3 { top: 62%; right: 40%; }
+.vira-home-map-pin-4 { top: 40%; right: 68%; }
+
+.vira-home-map-caption {
+    margin-top: 1rem;
+    color: var(--vira-muted);
+    font-size: 0.95rem;
+}
+
+.vira-home-campaigns {
+    background: #fff;
+}
+
+.vira-home-campaign-card {
+    height: 100%;
+    background: var(--vira-card);
+    border: 1px solid var(--vira-line);
+    overflow: hidden;
+}
+
+.vira-home-campaign-media {
+    aspect-ratio: 4 / 3;
+    background:
+        linear-gradient(160deg, #d9e0ea 0%, #f0ebe3 50%, #cfd8e4 100%);
+    position: relative;
+}
+
+.vira-home-campaign-media::after {
+    content: '';
+    position: absolute;
+    inset: auto 12% 18% 12%;
+    height: 28%;
+    background: rgba(23, 43, 70, 0.55);
+    border-radius: 0.2rem;
+}
+
+.vira-home-campaign-body {
+    padding: 1.1rem 1.2rem 1.35rem;
+}
+
+.vira-home-campaign-body h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--vira-navy);
+    margin-bottom: 0.35rem;
+}
+
+.vira-home-campaign-body p {
+    margin: 0;
+    color: var(--vira-muted);
+    font-size: 0.95rem;
+}
+
+.vira-home-cta {
+    background: var(--vira-navy);
+    color: #fff;
+    text-align: center;
+}
+
+.vira-home-cta h2 {
+    font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.vira-home-footer {
+    background: #121f33;
+    color: rgba(255, 255, 255, 0.82);
+    padding: 4rem 0 2rem;
+}
+
+.vira-home-footer h3,
+.vira-home-footer h4 {
+    color: #fff;
+    font-weight: 700;
+}
+
+.vira-home-footer a {
+    color: rgba(255, 255, 255, 0.82);
+    text-decoration: none;
+}
+
+.vira-home-footer a:hover,
+.vira-home-footer a:focus {
+    color: var(--vira-gold);
+}
+
+.vira-home-footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vira-home-footer-links li + li {
+    margin-top: 0.45rem;
+}
+
+.vira-home-footer-meta {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 2.5rem;
+    padding-top: 1.25rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.vira-home-fade-up {
+    animation: vira-home-fade-up 0.7s ease both;
+}
+
+.vira-home-fade-up-delay {
+    animation-delay: 0.15s;
+}
+
+@keyframes vira-home-fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .vira-home-nav {
+        padding: 1rem 0 0.5rem;
+    }
+
+    .vira-home-nav .nav-link {
+        padding-inline: 0;
+    }
+
+    .vira-home-header .vira-home-btn {
+        width: 100%;
+        margin-top: 0.75rem;
+    }
+
+    .vira-home-hero {
+        min-height: calc(100vh - 4rem);
+        min-height: calc(100dvh - 4rem);
+    }
+
+    .vira-home-hero-content {
+        padding: 4rem 0 3rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .vira-home-fade-up,
+    .vira-home-fade-up-delay {
+        animation: none;
+    }
+}
