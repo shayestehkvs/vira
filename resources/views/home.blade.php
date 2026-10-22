@@ -34,7 +34,7 @@
                         <li class="nav-item"><a class="nav-link" href="#pricing">تعرفه‌ها</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">تماس با ما</a></li>
                     </ul>
-                    <a class="vira-home-btn vira-home-btn-gold" href="#contact">درخواست مشاوره</a>
+                    <a class="vira-home-btn vira-home-btn-gold" href="#consultation">درخواست مشاوره</a>
                 </div>
             </div>
         </nav>
@@ -59,7 +59,7 @@
                     حضوری مدرن، لوکس و قابل‌مشاهده در بافت شهر.
                 </p>
                 <div class="vira-home-hero-actions vira-home-fade-up vira-home-fade-up-delay">
-                    <a class="vira-home-btn vira-home-btn-gold" href="#contact">درخواست مشاوره</a>
+                    <a class="vira-home-btn vira-home-btn-gold" href="#consultation">درخواست مشاوره</a>
                     <a class="vira-home-btn vira-home-btn-light" href="#campaigns">مشاهده نمونه‌ها</a>
                 </div>
             </div>
@@ -241,7 +241,7 @@
                         برای دریافت پیشنهاد متناسب با کمپین خود، درخواست مشاوره ثبت کنید.
                     </p>
                     <div class="mt-4">
-                        <a class="vira-home-btn vira-home-btn-gold" href="#contact">دریافت پیشنهاد قیمت</a>
+                        <a class="vira-home-btn vira-home-btn-gold" href="#consultation">دریافت پیشنهاد قیمت</a>
                     </div>
                 </div>
             </div>
@@ -250,9 +250,11 @@
         <section class="vira-home-section vira-home-cta" aria-labelledby="cta-title">
             <div class="container">
                 <h2 id="cta-title">آماده‌اید برند شما در حرکت دیده شود؟</h2>
-                <a class="vira-home-btn vira-home-btn-gold" href="#contact">درخواست مشاوره</a>
+                <a class="vira-home-btn vira-home-btn-gold" href="#consultation">درخواست مشاوره</a>
             </div>
         </section>
+
+        @include('consultation._form')
     </main>
 
     <footer class="vira-home-footer" id="contact">
