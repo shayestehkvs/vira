@@ -482,3 +482,201 @@ img {
         animation: none;
     }
 }
+
+/* Consultation form (homepage) */
+.vira-home-consultation {
+    background: #fff;
+}
+
+.vira-home-consultation-panel {
+    max-width: 48rem;
+    background: var(--vira-warm-white);
+    border: 1px solid var(--vira-line);
+    padding: 1.75rem 1.5rem;
+}
+
+.vira-home-alert {
+    border-radius: 0.35rem;
+}
+
+.vira-home-consultation .form-label {
+    font-weight: 600;
+    color: var(--vira-navy);
+}
+
+.vira-home-consultation .form-control,
+.vira-home-consultation .form-select {
+    border-color: var(--vira-line);
+    background: #fff;
+    color: var(--vira-text);
+    min-height: 2.75rem;
+}
+
+.vira-home-consultation textarea.form-control {
+    min-height: 7rem;
+}
+
+.vira-home-consultation .form-control:focus,
+.vira-home-consultation .form-select:focus {
+    border-color: var(--vira-gold);
+    box-shadow: 0 0 0 0.2rem rgba(198, 155, 81, 0.15);
+}
+
+/* Admin panel */
+.vira-admin-body {
+    background: var(--vira-warm-white);
+    min-height: 100vh;
+}
+
+.vira-admin-topbar {
+    background: #fff;
+    border-bottom: 1px solid var(--vira-line);
+}
+
+.vira-admin-brand {
+    font-weight: 700;
+    color: var(--vira-navy);
+    text-decoration: none;
+}
+
+.vira-admin-brand span {
+    color: var(--vira-gold);
+    font-weight: 500;
+    margin-inline-start: 0.35rem;
+}
+
+.vira-admin-nav-link {
+    color: var(--vira-text);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.vira-admin-nav-link:hover,
+.vira-admin-nav-link:focus {
+    color: var(--vira-gold);
+}
+
+.vira-admin-user {
+    color: var(--vira-muted);
+    font-size: 0.95rem;
+}
+
+.vira-admin-logout-btn {
+    min-height: 2.4rem;
+    padding: 0.4rem 1rem;
+}
+
+.vira-admin-page-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--vira-navy);
+}
+
+.vira-admin-muted {
+    color: var(--vira-muted);
+}
+
+.vira-admin-panel {
+    background: #fff;
+    border: 1px solid var(--vira-line);
+    padding: 1.25rem 1.35rem;
+}
+
+.vira-admin-stat {
+    background: #fff;
+    border: 1px solid var(--vira-line);
+    border-top: 2px solid var(--vira-gold);
+    padding: 1.1rem 1rem;
+    height: 100%;
+}
+
+.vira-admin-stat-label {
+    display: block;
+    color: var(--vira-muted);
+    margin-bottom: 0.35rem;
+    font-size: 0.95rem;
+}
+
+.vira-admin-stat-value {
+    display: block;
+    color: var(--vira-navy);
+    font-size: 1.6rem;
+}
+
+.vira-admin-table {
+    --bs-table-bg: transparent;
+}
+
+.vira-admin-table th {
+    color: var(--vira-navy);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.vira-admin-badge {
+    display: inline-block;
+    padding: 0.2rem 0.55rem;
+    border: 1px solid var(--vira-line);
+    font-size: 0.85rem;
+    color: var(--vira-navy);
+    background: var(--vira-warm-white);
+}
+
+.vira-admin-badge-new {
+    border-color: rgba(198, 155, 81, 0.45);
+    color: #8a6a2f;
+}
+
+.vira-admin-badge-in_progress {
+    border-color: rgba(23, 43, 70, 0.25);
+}
+
+.vira-admin-badge-completed {
+    border-color: rgba(38, 53, 72, 0.2);
+    color: var(--vira-muted);
+}
+
+.vira-admin-login-wrap {
+    min-height: calc(100vh - 4rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vira-admin-login-card {
+    width: 100%;
+    max-width: 26rem;
+    background: #fff;
+    border: 1px solid var(--vira-line);
+    padding: 2rem 1.5rem;
+}
+
+.vira-admin-dl > div {
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    gap: 0.75rem;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid var(--vira-line);
+}
+
+.vira-admin-dl dt {
+    color: var(--vira-muted);
+    font-weight: 500;
+    margin: 0;
+}
+
+.vira-admin-dl dd {
+    margin: 0;
+    color: var(--vira-text);
+}
+
+@media (max-width: 575.98px) {
+    .vira-admin-dl > div {
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+    }
+
+    .vira-home-consultation-panel {
+        padding: 1.25rem 1rem;
+    }
+}
